@@ -3,6 +3,7 @@
 // getMaxProfit(stockPricesYesterday);
 // returns 6 (buying for $5 and selling for $11)
 
+// O(n^2) - NO HINTS NEEDED
 // function getMaxProfit(stockPricesYesterday) {
 //   let maxDifference = 0;
 //   for(let i = 0; i < stockPricesYesterday.length; i++) {
@@ -17,6 +18,8 @@
 //   return maxDifference;
 // }
 
+
+//O(n) - READ SOME HINTS, did not look at soln
 function getMaxProfit(stockPricesYesterday) {
   let minBuyPrice = stockPricesYesterday[0];
   let maxDifference = 0;
