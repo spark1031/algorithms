@@ -6,6 +6,8 @@ function drawFloors(numOfFloors, blockDimensions) {
 
   const baseWidth = blockWidth + ((numOfFloors - 1) * 2 * blockWidth);
 
+
+
   let floor = numOfFloors - 1;
   while (floor >= 0) {
     let line = generateLine();
@@ -16,8 +18,9 @@ function drawFloors(numOfFloors, blockDimensions) {
   }
 
   function generateLine() {
-    const numOfStars = baseWidth - (floor * blockWidth * 2);
-    const numOfSpaces = baseWidth - numOfStars;
+    const numOfSpaces = floor * blockWidth * 2;
+    const numOfStars = baseWidth - numOfSpaces;
+
     const result = [];
     for (let i = 0; i < numOfSpaces / 2; i++) {
       result.push("-");
